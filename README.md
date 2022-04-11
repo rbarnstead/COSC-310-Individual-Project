@@ -35,7 +35,7 @@ example: User > my name is Bob
          OS > Sorry I can not disclose their location.
 
 
-# Class: SentimentAnalysis
+## Class: SentimentAnalysis
 Recognizes the sentiment of text using Socher et al’s sentiment model. This class takes input and checks if the sentiment behind our input is negative or not. If the sentiment is determined to be negative, Overseer responds with a generic response acknowledging the user's frustation.
 
 example: User > I am angry / User > I hate this place
@@ -47,3 +47,11 @@ A custom formatted text file that contains an important word with a colon sepera
 
 ## JUnit Tests
 There are four classes that are specifically used for JUnit testing. The StartupTest class, ReadFileTest class, ParseInputTest class and the KeyTest class. The StartupTest class tests a variety of different cases all related to fetching responses. The ReadFileTest class was not entirely important as if the file was incorrect, it will throw an error or a FileNotFound. The ParseInputTest class takes a wide variety of potential user inputs and checks to see how the bot responds. Lastly, the KeyTest class simply tests all of the get and set functions in the Key class.
+
+# Individual Segment
+
+## Google Cloud Translate API
+I utilized Google Cloud's translate API in order to translate the the chat bots response to the desired language. For this I chose just to use English, Spanish, French, Italian, and German as many other languages have unique characters that would appear as a ? once translated. Originally I was going to have it work in reverse as well where the user could enter a sentence in there language and then the bot would translate it and work as normal. However due to the limitation of the bot determining sentences through matching keywords, I found that the bot could almost never do so properly as the translated words rarely translated to a viable keyword. 
+
+## Google Maps Geocode API
+This was a last minute adjustment as I wanted to use the Twitter API to search for tweets from companies like NASA or SPACEX and relay that information to the chat bot. However I was unable to get a Twitter developer key as I put in an application last week and heard no response since. Therefore I chose to use the google maps geocode API. I made a rather silly implementation which prompts the user to enter an address and then a space cannon fires at the locations longitude and latitude. 
