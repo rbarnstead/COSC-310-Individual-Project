@@ -1,0 +1,102 @@
+unknown: I don't know what youre saying
+	generic: "Sorry, I didn't quite catch that. Could repeat that, please?"
+	generic: "Sorry, I didn't hear you. Could you repeat that a little louder, please?"
+	generic: "Sorry, I'm afraid I don't follow you"
+	generic: "Sorry, I don't quite understand"
+	generic: "Sorry, I don't know what you mean"
+greeting: greeting, greetings, hello, hi, hey, yo
+	generic: "Hello!"
+	how: "I am doing just fine, thanks for asking"
+	who: "My name is OVERSEER. I am the caretaker A.I. for the ship Blue Dwarf"
+os: overseer, ai, you, computer
+	generic: "I am OVERSEER, the A.I. tasked with taking care of the crew"
+	who: "I am OVERSEER. My job is to help the crew of the Blue Dwarf"
+	what: "I am a computer, an artificial intelligence. OS is my name; it is short for OVERSEER"
+	where: "I am everyone aboard the ship, but my processors are concentrated in the mainframe near the bridge"
+	how: "I am doing just fine"
+ship: dwarf, spaceship
+	generic: "You are currently aboard the research vessel Blue Dwarf"
+	who: "There are currently 1 crew memebers on Blue Dwarf"
+	what: "Blue Dwarf is a cutting edge research veseel"
+	when: "Blue Dwarf departed 1 093 days ago"
+	where: "The ship Blue Dwarf is in an elliptical orbit around the star Betelgeuse"
+help: assistance, assist, aid, help out, be of service to, support
+	generic: "Ask me anything and I will do my best to respond! I am still learning, so your best bet is to state things clearly. It helps if you ask a question that includes one of [who, what, when, where, why, or how]!"
+	who: "I can provide help to you"
+	what: "Ask me anything and I will see what I can do"
+	when: "I can assist you whenever"
+	how: "Ask me anything and I will see what I can do"
+medical: injured, dying, sick, pills, bandaid, meds, wounded, medicine	
+	who: "The doctor currently on duty is [ERROR, NO MEDICAL STAFF]"
+	what: "You can get your wounds treated at the medical bay"
+	when: "The medical bay is operational at all hours"
+	where: "The medical bay is located directly next to the crew quarters"
+repair: broken, worn out, fix, 
+	who: "The engineer on duty is [ERROR, NO ENGINEERING STAFF]"
+	what: "You can get your vehicles fixed at the repair bay"
+	when: "The repair bay is operataion from 9h00 until 17h00"
+	where: "The repair bay is located within the cargo hold"
+canteen: eat, hungry, chef, mess hall,
+	who: "The Chef on duty is [ERROR, NO KITCHEN STAFF]"
+	what: "You can get food at the canteen"
+	when: "The canteen is open at all hours"
+	where: "The canteen is located next to the crew quarters" 
+airlock: sealed, locked, unlocked, secure
+	generic: "The airlock is sealed"
+	where: "There are airlocks at every exit"
+	why: "There are airlocks all over the ship to prevent oxygen leaks"
+oxygen: air, air supply
+	generic: "We have sufficient oxygen for another 184 days"
+	why: "Oxygen is required in order for employees to survive"
+outside: space
+	where: "We are currently located somewhere in the vicinity of Betelgeuse"
+	what: "There is nothing but space outside"
+	who: "No life signatures detected outside"
+earth: home, planet, command, mission
+	who: "Earth is currently home to the Human population"
+	what: "Earth is a planet located in the Milky Way galaxy"
+	where: "Earth is currently 548 light years away from that pale blue dot"
+crew: employee, employees, crew member, personnel, staff, workers, everyone, we
+	who: "There are currently 1 employees on the Blue Dwarf"
+	what: "Each employee is required to complete tasks aboard the Blue Dwarf"
+	when: "Crew are required to complete their tasks before their repsective deadline"
+	where: "It is not within my capabilities to track crew members"
+	why: "Employees are required in order to complete their assigned task"
+supply: supplies, stock, food, water
+	what: "We have sufficient food, water, oxygen and medicine"
+	when: "The last supply ship arrived 93 days ago, the next should arrive in [ERROR, NO PLANNED RESUPPLY] days"
+	where: "The supplies are located in the cargo hold before they are distributed around the ship"
+	why: "Food, water, oxygen and medicine are all required to keep the station functioning"
+security: safety, weapons
+	who: "There are currently 0 security officers on duty"
+	what: "Security officers are patrolling the station"
+	when: "The last shift rotation was 193 hours ago"
+	where: "Security officers are currently located at [ERROR, NO SECURITY OFFCICERS FOUND]"
+	why: "Security officers provide peace and mind for other crew members and protect against malevolent entities"
+vehicles: rover, drone
+	what: "We have a rover and a drone on board the Blue Dwarf. In addition, there are 0 escape pods left"
+	when: "The rover was last taken out 12 days ago. The drone was last taken out 8 days ago. The esacpe pods were used 7 days ago"
+	where: "Both rover and drone are currently docked in the vehicle bay next to the cargo hold. The escape pods are located all around the ship"
+	why: "The rover allows for long distance exploration. The drone allows for inspection of the station without needing to leave. The escape pods are for emergencies"
+research: science, scientist, materials
+	who: "There are current 0 scientists aboard the Blue Dwarf"
+	what: "Research is currently being conducted on an unknown specimen found. However, research is currently suspended because of [ERROR, NO REASON SUPPLIED]"
+	when: "Specimen under analysis for another [ERROR, RESEARCH SUSPENDED] days"
+	where: "Research is done in the science bay located across the hall from the medical bay"
+	why: "Science and research is the primary objective of the Blue Dwarf"
+bathroom: toilet, occupied, available, clean
+	who: "The bathrooms are currently not occupied"
+	when: "The bathrooms are always operational"
+	where: "The bathrooms are located directly next to the sleeping quarters as well as captain quarters"
+time: day, night
+	what: "The current time is 10h00 UTC"
+weather: where is space station located?
+	generic: "Betelgeuse is currently displaying an large amount of solar storms"
+mail: email, message, recording, contact, family
+	who: "No crew have any mail in their inbox"
+	what: "That information is classified"
+	when: "The last piece of mail received was 9 days ago"
+	where: "Mail can be accesed at any console"
+	why: "So employees can keep in touch with loves while on the Blue Dwarf"
+job: task, assignment
+	generic: "You are required to [ERROR, NO EMPLOYEE TASK FOUND]"

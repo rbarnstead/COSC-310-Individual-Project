@@ -1,0 +1,56 @@
+#JUnit Tests Summary
+##Describes the gist of each class's JUnit tests
+
+
+##StartupTest
+###testFetchResponse
+Creates a custom Dictionary.
+First several cases try various combination of fetches where the key(s) are invalid.
+The next several cases try combinations where the keys are valid.
+NOTE: these tests *will fail* if the Startup.fetchResponse() Strings are modified.
+
+
+##ParseInputTest
+###testParseInput
+Creates a custom ArrayList<Key>.
+Tests being able to extract the keys from the input. 
+Eensures that the function can correctly parse casing and punctuation.
+
+###testMatches
+Tests a case where the Strings match.
+Tests a bunch of cases where the Strings don't match in subtle ways.
+
+###testMatchesPrimary
+Tests that it can correctly match given either the Key itself or its Synonyms.
+Makes sure it does not match when the input it not contained within the Keys.
+Also ensures that it doesn't match with the Secondary Key
+Notes: tests the empty String case ("") but not the null case as it is garunteed that a String is passed ("generic" if no Keys were found)
+
+###testMatchesSecondary
+Tests it can correctly match given the Key itself.
+Make sure it doesn't match when either handed something unrelated, or either of the Primary Key or Synonyms.
+Notes: tests the empty String case ("") but not the null case as it is garunteed that a String is passed ("generic" if no Keys were found)
+
+###testCleanString
+Tests correcting casing.
+Tests splitting correctly around spaces.
+Tests when both above cases are combined.
+Ensures that when handed a String with no modifications needed, it returns it unmodified.
+
+
+##KeyTest
+###All
+To make this brief, it tests the trio of pairs for get/setAttribute.
+Tests that it returns the correct String and that it is not null.
+Checks that remains true after the String was changed through setAttribute.
+Checks that remains true after the other, unrelated attributes change.
+
+
+##ReadFileTest
+###testLoadDict
+Ensures that the Dictionary is not null when handed a correct file path.
+Ensures it is null when handed an invalid path.
+
+###testLoadKeys
+Ensures that the ArrayList<Key> is not null when handed a correct file path.
+Ensures it is null when handed an invalid path.
